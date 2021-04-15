@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 
 #Champion list: karma, cho, tf, kayn, fiora
-CHAMPTION = 'cho'
+CHAMPTION = 'tf'
 
 template = 'screens/temp_'+CHAMPTION+'.png'
 cap = cv2.VideoCapture('screens/twisted_fate_TestVid.mp4')
@@ -36,7 +36,7 @@ while(cap.isOpened()):
         res = cv2.matchTemplate(cropped, temp, 4) #No Mask
         minVal1, maxVal1, minLoc1, maxLoc1 = cv2.minMaxLoc(res)
         f.write("Match Val: " + str(maxVal1) + ", Max Location: " + str(maxLoc1))
-        if maxVal1 < 3500000.0:
+        if maxVal1 < 3000000.0:
             f.write(", MATCH FAIL On frame: " + str(frameCount) + "\n")
             success=False
         else:

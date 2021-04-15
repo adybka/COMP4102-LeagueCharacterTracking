@@ -1,6 +1,6 @@
 import numpy as np
 import cv2
-
+#Champion list: karma, cho, tf, kayn, fiora
 CHAMPTION = 'cho'
 
 template = 'screens/temp_'+CHAMPTION+'.png'
