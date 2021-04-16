@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 
 #Champion list: karma, cho, tf, kayn, fiora
-CHAMPTION = 'tf'
+CHAMPTION = 'karma'
 
 template = 'screens/temp_'+CHAMPTION+'.png'
 cap = cv2.VideoCapture('screens/twisted_fate_TestVid.mp4')
